@@ -1,0 +1,122 @@
+body {
+      margin: 0;
+      background-color: black;
+      color: #00ffcc;
+      font-family: 'Press Start 2P', cursive;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 5vw;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px #ff00ff;
+      position: relative;
+      top:1px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .kanji_button {
+      font-family: 'Press Start 2P',cursive;
+      font-size: 30px;
+      margin: 5px 0;
+      transition: 0.3s;
+      color: #ffff00;
+      text-shadow: 2px 2px #ff00ff;
+      background-color: transparent; /*nền trong suốt */
+      border: 2px solid #ffffff;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      cursor: pointer;
+      box-shadow: all 0.1s ease;
+      image-rendering: pixelated;
+    }
+
+   .kanji_button:hover{
+      background-color: rgb(255, 255, 255);
+      transform: scale(1.1); /* phóng to nhẹ khi hover */
+      cursor: pointer;
+    } 
+
+
+
+    .voc_button {
+      font-family: 'Press Start 2P',cursive;
+      font-size: 30px;
+      margin: 5px 0;
+      transition: 0.3s;
+      color: #ffff00;
+      text-shadow: 2px 2px #ff00ff;
+      background-color: transparent; /*nền trong suốt */
+      border: 2px solid #ffffff;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      cursor: pointer;
+      box-shadow: all 0.1s ease;
+      image-rendering: pixelated;
+      
+    }
+
+    .voc_button:hover{
+      background-color: rgb(255, 255, 255);
+      transform: scale(1.1); /* phóng to nhẹ khi hover */
+      cursor: pointer;
+    } 
+
+    select {
+  font-size: 1em;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+                    linear-gradient(135deg, gray 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+                      calc(100% - 15px) calc(1em + 2px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  width: 150px;
+  
+}
+
+.word {
+  margin-top: 30px;
+  top:50px;
+  font-size: 80px;
+  font-weight: bold;
+  color: #000000;
+}
+
+#meaning {
+  font-size:  100px;
+  color: #a2a2a2;
+  font-weight: bold;
+  position:absolute;
+  top:20%;
+}
+
+
+
+
+    
+
+
+
+
+    
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 12px;
+      color: #666;
+    }

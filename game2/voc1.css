@@ -1,0 +1,161 @@
+body{
+  background-image:linear-gradient(to bottom right, #191834,#2b2c68,#26b7cd,#61bdaf);
+
+    margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+
+}
+
+h1{
+  color :white;
+  text-align: center;
+  
+}
+
+.lesson-card {
+ position: relative;
+  
+  margin-top: 30px;
+  height: 300px;
+  width: 250px;
+  border-radius: 20px;
+  background: hsla(0, 0%, 80%, 0.3);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  
+  -webkit-backdrop-filter: blur(15px);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;  
+}
+
+.square{
+    height: 200px;
+    width: 250px;
+   background-color: rgba(226, 226, 226, 0.726);
+   border-radius: 20px;
+   position:absolute;
+   top: 5%;
+   display: inline-block;
+   
+   
+}
+
+.meaning {
+ 
+  font-size: 50px;              /* vừa phải hơn */
+  font-family:Arial, Helvetica, sans-serif;
+  font-style: italic;
+  color: #f0e7da;
+  line-height: 1.6;             /* giãn dòng đều */
+  text-align: center;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2); /* chữ nổi hơn */
+  position: absolute;
+  top: 20%;
+}
+
+
+input[type="text"] {
+  font-size: 1em;
+  background: rgba(255, 255, 255, 0.411);
+  box-shadow: 2px 2px 2px inset white;
+  border: 2px solid #007bff;
+
+  padding: 20px;
+  border-radius: 50px;
+  border: none;
+  width: 100%;
+  max-width: 200px;
+  height: 5px;
+  position: absolute; /* Keep it absolute relative to lesson-card */
+  top: 70%; /* Position relative to lesson-card */
+  left: 50%; /* Center it horizontally */
+  transform: translateX(-50%); /* Fine-tune centering */
+  caret-color: rgb(255, 255, 255);
+  
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input::placeholder {
+  color: #dddddd;         /* Màu chữ placeholder */
+  font-style: italic;  /* Kiểu chữ nghiêng */
+  font-size: 20px;     /* Cỡ chữ */
+  opacity: 1;          /* Đảm bảo nó hiển thị rõ */
+}
+#result {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  position: absolute; /* Position relative to lesson-card */
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#result.correct {
+  color:#4a6644;
+  font-family: 'FVF-Fernando';
+}
+
+#result.incorrect {
+  color: red;
+}
+
+
+#correctAnswer {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #ffffff;
+  position: absolute; /* Position relative to lesson-card */
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /* Ensure it takes full width to center text */
+  text-align: center; /* Center the text content */
+}
+
+select {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.411);
+  box-shadow: 2px 2px 2px inset white;
+  border: 1px solid #007bff;
+
+  padding: 2px;
+  border-radius: 50px;
+  border: none;
+  appearance: none;
+ 
+  background-repeat: no-repeat;
+  cursor: pointer;
+  width: 80px;
+  position: absolute;
+  left:  57%;
+  top: 30%;
+}
+
+
+
+
+
+
+
